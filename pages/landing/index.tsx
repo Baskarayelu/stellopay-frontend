@@ -4,6 +4,7 @@ import Footer from "@/components/common/footer";
 // import DashBoard from "@/components/dashboard/dashboard-page"
 import LandingPageNavBar from "@/components/landing/landing-page-nav-bar";
 import BenefitsSection from "@/components/landing/benefits";
+import ValuePropositions from "@/components/landing/value-propositions";
 import GetStartedCTA from "@/components/landing/get-started-cta";
 import { FeaturesIntro } from "@/components/landing/features-intro";
 
@@ -15,6 +16,7 @@ export default function LandingPage() {
       <Hero />
       <FeaturesIntro id="features" />
       <KeyFeatures />
+      <ValuePropositions />
       <BenefitsSection />
       <GetStartedCTA />
       <Footer />
