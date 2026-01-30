@@ -16,6 +16,9 @@ export interface FeatureGridItem {
 
 export interface FeaturesGridProps {
   className?: string;
+export interface StatCardItem {
+  value: string;
+  label: string;
 }
 
 export const HeroContent = {
