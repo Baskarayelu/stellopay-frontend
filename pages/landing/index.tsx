@@ -4,6 +4,7 @@ import Footer from "@/components/common/footer";
 // import DashBoard from "@/components/dashboard/dashboard-page"
 import LandingPageNavBar from "@/components/landing/navbar";
 import BenefitsSection from "@/components/landing/benefits";
+import FeaturesGrid from "@/components/landing/features-grid";
 import ValuePropositions from "@/components/landing/value-propositions";
 import GetStartedCTA from "@/components/landing/get-started-cta";
 import { FeaturesIntro } from "@/components/landing/features-intro";
@@ -22,12 +23,12 @@ export default function LandingPage() {
       {<LandingPageNavBar />}
       {/* Removed: <DashBoard /> - this shouldn't be on the landing page */}
       <Hero />
+      <FeaturesGrid />
       <section className="bg-[#F5F3FF] dark:bg-[#0F0A14] py-12 md:py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <StatsCards stats={defaultStats} />
         </div>
       </section>
-      <FeaturesIntro id="features" />
       <KeyFeatures />
       <ValuePropositions />
       <BenefitsSection />
