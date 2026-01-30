@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Home, PiggyBank } from "lucide-react";
+import { Copy } from "lucide-react";
 import Image from "next/image";
 import Icon from "@/public/Icon.png";
 import Piggy from "@/public/piggy-bank.png";
 import { copyToClipboardWithTimeout } from "@/utils/clipboardUtils";
 
-export default function AccountSummary() {
+
+function AccountSummaryView({ isLoading = false }: { isLoading?: boolean }) {
   const [copied, setCopied] = useState(false);
   const address = "0x8dE1243U45...67800UZ";
 
@@ -62,4 +63,9 @@ export default function AccountSummary() {
       </div>
     </div>
   );
+}
+
+export default function Page() {
+  // If this page later fetches data, you can wire up loading state here.
+  return <AccountSummaryView isLoading={false} />;
 }
